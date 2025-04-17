@@ -5,7 +5,7 @@ LABEL description="Dockerfile for Node.js application"
 LABEL app="node-app"
 
 WORKDIR /app
-COPY package*.json ./
+COPY package.json ./
 RUN npm install
 
 COPY . .
