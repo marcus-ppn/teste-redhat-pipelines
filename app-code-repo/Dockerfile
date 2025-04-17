@@ -1,4 +1,4 @@
-FROM node:22-alpine
+FROM node:23-alpine3.18
 LABEL maintainer="rodrigo.mota@ppntecnologia.com.br"
 LABEL version="1.0"
 LABEL description="Dockerfile for Node.js application"
