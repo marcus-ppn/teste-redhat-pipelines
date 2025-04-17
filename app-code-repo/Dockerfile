@@ -1,4 +1,4 @@
-FROM docker.io/library/node:22
+FROM docker.io/library/node:22-slim
 
 LABEL maintainer="rodrigo.mota@ppntecnologia.com.br"
 LABEL version="1.0"
