@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM docker.io/library/nginx:latest
 LABEL maintainer="rodrigo.mota@ppntecnologia.com.br"
 
 # Expose port 8080
