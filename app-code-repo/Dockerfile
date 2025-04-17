@@ -1,8 +1,14 @@
-FROM docker.io/library/nginx:latest
+FROM docker.io/library/node:22
+
 LABEL maintainer="rodrigo.mota@ppntecnologia.com.br"
+LABEL version="1.0"
+LABEL description="Dockerfile for Node.js application"
+LABEL app="node-app"
 
-# Expose port 8080
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+
+COPY . .
 EXPOSE 8080
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]# Set the working directory
+CMD ["node", "app.js"]
