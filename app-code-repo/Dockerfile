@@ -1,4 +1,4 @@
-FROM node:23-slim
+FROM node:22
 LABEL maintainer="rodrigo.mota@ppntecnologia.com.br"
 LABEL version="1.0"
 LABEL description="Dockerfile for Node.js application"
